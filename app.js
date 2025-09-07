@@ -15,7 +15,7 @@ connectDB();
 const allowedOrigins = [
   'http://localhost:5173', // Vite dev
   'http://localhost:3000', // CRA dev
-  'https://todo-mvc-app.vercel.app/', // production
+  'https://todo-mvc-app-frontend.vercel.app/', // production
 ];
 
 app.use(
