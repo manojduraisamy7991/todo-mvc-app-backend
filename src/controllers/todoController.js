@@ -5,7 +5,11 @@ const createTodo = async (req, res) => {
     const todo = await Todo.create(req.body);
     res.status(201).json(todo);
   } catch (err) {
-    console.log(err);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to create todo',
+      error: err.message, 
+    });
   }
 };
 
